@@ -1,1 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75em; /* ~75% larger than body text */
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Section layout */
+.row {
+  width: 100%;
+}
+
+.col {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 40px 15px 15px 15px; /* extra top padding for title */
+  margin: 10px;
+  position: relative;
+}
+
+/* Section titles */
+.section-title {
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.25em; /* ~25% larger than body text */
+}
+
+.chicken {
+  background-color: #f8b5b5;
+}
+
+.beef {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.sushi {
+  background-color: #f9e79f;
+}
+
+/* ===== Layout by screen size ===== */
+
+/* Desktop: 3 equal columns */
+@media (min-width: 992px) {
+  .col {
+    float: left;
+    width: 30%;
+  }
+}
+
+/* Tablet: 2 columns on top, 1 full-width below */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col {
+    float: left;
+    width: 45%;
+  }
+  .col-sushi {
+    width: 92%; /* take full row */
+    clear: both;
+  }
+}
+
+/* Mobile: each section full-width */
+@media (max-width: 767px) {
+  .col {
+    width: 100%;
+    float: none;
+  }
+}
 
