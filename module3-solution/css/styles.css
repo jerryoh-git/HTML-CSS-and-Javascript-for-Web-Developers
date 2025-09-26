@@ -1,11 +1,12 @@
 .menu-item {
   background-color: #d3d3d3;
   padding: 20px;
-  min-height: 200px;
+  min-height: 1000px;
 }
 
 /* Force mobile dropdown menu full width */
 .navbar-nav > li > a {
   border: 1px solid #000;   /* black line like in mockup */
 }
+
 
