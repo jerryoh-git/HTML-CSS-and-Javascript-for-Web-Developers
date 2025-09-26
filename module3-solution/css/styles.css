@@ -9,12 +9,13 @@
   border: 1px solid #000;   /* black line like in mockup */
 }
 
-/* Default (desktop/tablet) */
+/* Default (desktop/tablet)
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
+*/
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
@@ -23,4 +24,5 @@
     padding-right: 25px;
   }
 }
+
 
